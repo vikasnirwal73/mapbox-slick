@@ -1,0 +1,70 @@
+{
+    "offices": [
+        {
+            "title": "Alaska",
+            "location": "634 Kidd Avenue, Minto, Alaska, 99758",
+            "offices": [
+                {
+                    "title": "Anchorage",
+                    "address": "1130 Kidd Avenue, Anchorage, Alaska, 99501",
+                    "tel": "907-936-9409",
+                    "imageUrl": "./images/office-1.jpg"
+                },
+                {
+                    "title": "Minto",
+                    "address": "634 Kidd Avenue, Minto, Alaska, 99758",
+                    "tel": "907-798-4097",
+                    "imageUrl": "./images/office-2.jpg"
+                },
+                {
+                    "title": "Twin Hills",
+                    "address": "2981 Jerry Toth Drive, Twin Hills, Alaska, 99576",
+                    "tel": "907-525-1457",
+                    "imageUrl": "./images/office-3.jpg"
+                }
+            ]
+        },
+        {
+            "title": "Arizona",
+            "location": "1854 Crowfield Road, Phoenix, Arizona, 85003",
+            "offices": [
+                {
+                    "title": "Phoenix",
+                    "address": "1854 Crowfield Road, Phoenix, Arizona, 85003",
+                    "tel": "602-822-6788",
+                    "imageUrl": "./images/office-4.jpg"
+                },
+                {
+                    "title": "Show Low",
+                    "address": "4141 Martha Street, Show Low, Arizona, 85901",
+                    "tel": "928-751-0816",
+                    "imageUrl": "./images/office-5.jpg"
+                }
+            ]
+        },
+        {
+            "title": "Connecticut",
+            "location": "4206 Whitman Court, Stamford, Connecticut, 06995",
+            "offices": [
+                {
+                    "title": "Hartford",
+                    "address": "4749 Meadow View Drive, Hartford, Connecticut, 06103",
+                    "tel": "860-517-1646",
+                    "imageUrl": "./images/office-2.jpg"
+                },
+                {
+                    "title": "Bridgeport",
+                    "address": "4210 Colony Street, Connecticut, 06604",
+                    "tel": "203-334-1323",
+                    "imageUrl": "./images/office-4.jpg"
+                },
+                {
+                    "title": "Stamford",
+                    "address": "4206 Whitman Court, Stamford, Connecticut, 06995",
+                    "tel": "203-638-2939",
+                    "imageUrl": "./images/office-1.jpg"
+                }
+            ]
+        }
+    ]
+}

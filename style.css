@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.marker {
+    background-image: url(./images/pin.svg);
+    background-size: cover;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    background-position: center;
+}
+
+.office-wrap {
+    width: 380px;
+    position: absolute;
+    left: 50%;
+    margin-left: -190px;
+    bottom: 100%;
+    background: #fff;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    border-radius: 4px;
+}
+
+.marker:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    height: 0;
+    width: 0;
+    border: 10px solid transparent;
+    border-top-color: #fff;
+    display: block;
+    z-index: 9;
+    left: 50%;
+    margin-left: -8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.open .marker:after {
+    opacity: 1;
+    visibility: visible;
+}
+.open .office-wrap {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.office-content {
+    padding: 0 15px 15px 15px;
+}
+
+.office-img img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.button-wrap button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    color: #a8b7cd;
+    font-size: 15px;
+    background-color: #314041;
+    position: absolute;
+}
+.close {
+    top: 0;
+    right: 0;
+}
+
+.prev {
+    top: 250px;
+    left: 0;
+}
+
+.next {
+    top: 250px;
+    right: 0;
+}
+.office-content i {
+    color: #ee407e;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.pagination {
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #ee407e;
+    font-weight: bold;
+}
+
+.office-title {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #ee407e;
+}
+
+.office-telephone {
+    margin: 0;
+}
+
+.office-address {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+    .office-wrap {
+        width: 320px;
+    }
+}
